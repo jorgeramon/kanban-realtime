@@ -1,0 +1,40 @@
+header {
+  padding: 15px;
+  background: #1565c0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header input, header button {
+  height: 50px;
+  color: #fff;
+  font-size: 15px;
+  text-indent: 18px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  flex: 1;
+}
+
+header input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-style: italic;
+}
+
+header button {
+  flex: 1 100%;
+  color: #1565c0;
+  background: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}

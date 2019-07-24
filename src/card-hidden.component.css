@@ -1,0 +1,7 @@
+.card-hidden {
+  width: 380px;
+  height: 0px;
+  padding: 0;
+  margin-bottom: 0;
+  visibility: hidden;
+}

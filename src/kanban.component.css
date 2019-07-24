@@ -1,0 +1,7 @@
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
