@@ -22,7 +22,7 @@ class Stage extends React.Component {
   }
 
   render() {
-    const { name, cards } = this.props;
+    const { name, cards, removeCard } = this.props;
 
     return (
       <section className="stage" onDrop={ e => this.drop(e) } onDragOver={ e => this.allowDrop(e) }>
@@ -30,7 +30,7 @@ class Stage extends React.Component {
         <CardHidden />
         {
           cards.map(value => (
-            <Card key={ value.id } { ...value } />
+            <Card key={ value.id } { ...value } removeCard={ removeCard } />
           ))
         }
       </section>

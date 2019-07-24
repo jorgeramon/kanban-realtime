@@ -9,12 +9,13 @@ class Card extends React.Component {
   }
 
   render() {
-    const { title, description } = this.props;
+    const { title, description, removeCard, id } = this.props;
 
     return (
       <div className="card" draggable onDragStart={ e => this.drag(e) }>
         <h2 className="card-activity">{ title }</h2>
         <p className="card-description">{ description }</p>
+        <span className="card__date card__date--late" onClick={ e => removeCard(id) }>DELETE</span>
       </div>
     )
   }
